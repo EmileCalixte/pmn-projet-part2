@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  web:
+    image: alexisljn/pmn-dolibarr
+    working_dir: /app
+    depends_on:
+      - database
+    ports:
+    - 80:80
+  database:
+    image: mariadb:10.6
+    environment:
+      MYSQL_DATABASE: dolibarr
+      MYSQL_ROOT_PASSWORD: admin
