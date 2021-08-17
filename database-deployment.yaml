@@ -9,7 +9,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: database
+      io.kompose.service: database
   strategy: {}
   template:
     metadata:
