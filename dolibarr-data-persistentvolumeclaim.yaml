@@ -6,6 +6,9 @@ metadata:
     io.kompose.service: dolibarr-data
   name: dolibarr-data
 spec:
+  selector:
+    matchLabels:
+      io.kompose.service: web
   accessModes:
   - ReadOnlyMany
   resources:

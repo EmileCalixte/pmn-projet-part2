@@ -6,6 +6,9 @@ metadata:
     io.kompose.service: mariadb-data
   name: mariadb-data
 spec:
+  selector:
+    matchLabels:
+      io.kompose.service: database
   accessModes:
   - ReadOnlyMany
   resources:
