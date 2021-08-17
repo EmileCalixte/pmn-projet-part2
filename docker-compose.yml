@@ -8,8 +8,13 @@ services:
       - "database"
     ports:
     - "80:80"
+    volumes:
+      - ./docker-data/dolibarr/data:/app/htdocs
+      - ./docker-data/dolibarr/documents:/app/documents
   database:
     image: mariadb:10.6
+    volumes:
+      - ./docker-data/mariadb:/var/lib/mysql
     environment:
       MYSQL_DATABASE: dolibarr
       MYSQL_ROOT_PASSWORD: admin
