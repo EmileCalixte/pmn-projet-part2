@@ -13,6 +13,5 @@ spec:
   selector:
     io.kompose.service: web
   type: LoadBalancer
-  externalTrafficPolicy: Local
 status:
   loadBalancer: {}

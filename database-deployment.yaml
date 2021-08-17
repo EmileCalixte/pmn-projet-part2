@@ -27,12 +27,12 @@ spec:
         image: mariadb:10.6
         name: database
         resources: {}
-#        volumeMounts:
-#        - mountPath: /var/lib/mysql
-#          name: mariadb-data
-#      restartPolicy: Always
-#      volumes:
-#      - name: mariadb-data
-#        persistentVolumeClaim:
-#          claimName: mariadb-data
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: mariadb-data
+      restartPolicy: Always
+      volumes:
+      - name: mariadb-data
+        persistentVolumeClaim:
+          claimName: mariadb-data
 status: {}
