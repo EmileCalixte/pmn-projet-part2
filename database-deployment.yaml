@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: database
+  name: database
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: database
+    spec:
+      containers:
+      - env:
+        - name: MYSQL_DATABASE
+          value: dolibarr
+        - name: MYSQL_ROOT_PASSWORD
+          value: admin
+        image: mariadb:10.6
+        name: database
+        resources: {}
+      restartPolicy: Always
+status: {}
