@@ -42,5 +42,4 @@ spec:
         - name: dolibarr-documents
           persistentVolumeClaim:
             claimName: dolibarr-documents
-          emptyDir: {}
 status: {}
