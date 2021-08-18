@@ -6,7 +6,7 @@ metadata:
     io.kompose.service: dolibarr-documents
   name: dolibarr-documents
 spec:
-  storageClassName: local-storage
+#  storageClassName: local-storage
   #  selector:
 #    matchLabels:
 #      io.kompose.service: web
