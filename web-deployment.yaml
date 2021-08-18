@@ -33,6 +33,7 @@ spec:
       restartPolicy: Always
       securityContext:
         fsGroup: 33
+        fsGroupChangePolicy: 'Always'
       volumes:
         - name: dolibarr-data
           persistentVolumeClaim:
