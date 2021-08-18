@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: database
+    io.kompose.service: mariadb-data
   name: mariadb-data
 spec:
   selector:

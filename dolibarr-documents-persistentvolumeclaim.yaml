@@ -3,12 +3,12 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: web
+    io.kompose.service: dolibarr-documents
   name: dolibarr-documents
 spec:
-  selector:
-    matchLabels:
-      io.kompose.service: web
+#  selector:
+#    matchLabels:
+#      io.kompose.service: web
   accessModes:
   - ReadOnlyMany
   resources:
