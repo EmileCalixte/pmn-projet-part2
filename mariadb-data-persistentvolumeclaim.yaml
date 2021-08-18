@@ -6,6 +6,7 @@ metadata:
     io.kompose.service: mariadb-data
   name: mariadb-data
 spec:
+  storageClassName: local-storage
   selector:
     matchLabels:
       io.kompose.service: database
