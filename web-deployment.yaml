@@ -38,7 +38,9 @@ spec:
         - name: dolibarr-data
           persistentVolumeClaim:
             claimName: dolibarr-data
+          emptyDir: {}
         - name: dolibarr-documents
           persistentVolumeClaim:
             claimName: dolibarr-documents
+          emptyDir: {}
 status: {}
