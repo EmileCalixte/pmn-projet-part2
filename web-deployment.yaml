@@ -24,18 +24,18 @@ spec:
         ports:
         - containerPort: 80
         resources: {}
-#        volumeMounts:
-#        - mountPath: /app/htdocs
-#          name: dolibarr-data
-#        - mountPath: /app/documents
-#          name: dolibarr-documents
+        volumeMounts:
+        - mountPath: /app/htdocs
+          name: dolibarr-data
+        - mountPath: /app/documents
+          name: dolibarr-documents
         workingDir: /app
       restartPolicy: Always
-#      volumes:
-#        - name: dolibarr-data
-#          persistentVolumeClaim:
-#            claimName: dolibarr-data
-#        - name: dolibarr-documents
-#          persistentVolumeClaim:
-#            claimName: dolibarr-documents
+      volumes:
+        - name: dolibarr-data
+          persistentVolumeClaim:
+            claimName: dolibarr-data
+        - name: dolibarr-documents
+          persistentVolumeClaim:
+            claimName: dolibarr-documents
 status: {}
