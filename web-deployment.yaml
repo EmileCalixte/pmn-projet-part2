@@ -32,8 +32,6 @@ spec:
         workingDir: /app
       restartPolicy: Always
       securityContext:
-        runAsUser: 33
-        runAsGroup: 33
         fsGroup: 33
         fsGroupChangePolicy: 'Always'
       volumes:
