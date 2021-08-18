@@ -14,6 +14,9 @@
       io.kompose.service: web
     - 
 - kubectl apply -f <file>.yaml : execute un fichier deployment k8s
+    - apply <pvc>
+    - apply <deployments>
+    - apply <load-balancer>
 - kubectl get pods : liste pods actifs
 - kubectl delete pod <nom-du-pod> : Supprime un pod
 
