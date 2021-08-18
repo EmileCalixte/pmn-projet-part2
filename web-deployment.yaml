@@ -31,6 +31,8 @@ spec:
           name: dolibarr-documents
         workingDir: /app
       restartPolicy: Always
+      securityContext:
+        fsGroup: 33
       volumes:
         - name: dolibarr-data
           persistentVolumeClaim:
