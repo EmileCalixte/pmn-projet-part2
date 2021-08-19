@@ -2,7 +2,7 @@ version: "2"
 
 services:
   web:
-    image: alexisljn/pmn-dolibarr
+    image: alexisljn/pmn-dolibarr:demo-v3
     #working_dir: /app
     depends_on:
       - "database"

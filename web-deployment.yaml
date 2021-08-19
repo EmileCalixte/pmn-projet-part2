@@ -19,7 +19,7 @@ spec:
         io.kompose.service: web
     spec:
       containers:
-      - image: alexisljn/pmn-dolibarr:demo-v2
+      - image: alexisljn/pmn-dolibarr:demo-v3
         name: web
         ports:
         - containerPort: 80
