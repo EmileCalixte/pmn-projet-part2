@@ -20,6 +20,7 @@ spec:
     spec:
       containers:
       - image: alexisljn/pmn-dolibarr
+        imagePullPolicy: Always
         name: web
         ports:
         - containerPort: 80

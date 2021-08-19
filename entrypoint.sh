@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 
-chown -R www-data:www-data /var/www/html/
-chmod -R 777 /var/www/html/
-apachectl -D FOREGROUND
+chown -R www-data:www-data /var/www/html/htdocs/conf
+chown -R www-data:www-data /var/www/html/documents
+exec apachectl -D FOREGROUND
