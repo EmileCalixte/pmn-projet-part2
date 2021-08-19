@@ -19,8 +19,7 @@ spec:
         io.kompose.service: web
     spec:
       containers:
-      - image: alexisljn/pmn-dolibarr
-        imagePullPolicy: Always
+      - image: alexisljn/pmn-dolibarr:demo
         name: web
         ports:
         - containerPort: 80

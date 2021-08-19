@@ -1,7 +1,7 @@
 FROM debian:buster
 
 RUN apt update && \
-    apt install -y apache2 php7.3
+    apt install -y apache2 php7.3 libapache2-mod-php7.3
 
 COPY dolibarr /var/www/html
 COPY vhost-apache-dolibarr.conf /etc/apache2/sites-available/
