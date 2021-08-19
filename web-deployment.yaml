@@ -27,10 +27,10 @@ spec:
         volumeMounts:
         - mountPath: /app/htdocs/conf
           name: dolibarr-data
-          subPath: conf
+          #subPath: conf
         - mountPath: /app/documents
           name: dolibarr-documents
-          subPath: documents
+          #subPath: documents
         workingDir: /app
       restartPolicy: Always
       volumes:
