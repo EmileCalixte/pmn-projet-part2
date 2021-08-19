@@ -9,7 +9,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - dolibarr-data:/app/htdocs
+      - dolibarr-data:/app/htdocs/conf
       - dolibarr-documents:/app/documents
   database:
     image: mariadb:10.6
