@@ -31,7 +31,7 @@ spec:
         - mountPath: /var/www/html/documents
           name: dolibarr-documents
           #subPath: documents
-        workingDir: /app
+        #workingDir: /app
       restartPolicy: Always
       volumes:
         - name: dolibarr-data
