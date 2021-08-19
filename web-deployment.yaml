@@ -25,10 +25,10 @@ spec:
         - containerPort: 80
         resources: {}
         volumeMounts:
-        - mountPath: /app/htdocs/conf
+        - mountPath: /var/www/html/htdocs/conf
           name: dolibarr-data
           #subPath: conf
-        - mountPath: /app/documents
+        - mountPath: /var/www/html/documents
           name: dolibarr-documents
           #subPath: documents
         workingDir: /app
