@@ -20,3 +20,44 @@
 - kubectl get pods : liste pods actifs
 - kubectl delete pod <nom-du-pod> : Supprime un pod
 
+## Procédure de tests
+
+### Démarrage des services
+
+```bash
+sudo chmod 777 /var/run/docker.sock
+```
+
+```bash
+kubectl apply -f yaml/
+```
+
+```bash
+minikube tunnel
+```
+
+```bash
+kubectl get services
+```
+
+=> Récupérer l'External IP du service `web-load-balancer`
+
+```bash
+curl -L <external-ip>
+```
+
+=> Constater une réponse HTTP de Dolibarr
+
+### Suppression d'un pod
+
+```bash
+kubectl get pod
+```
+
+=> Récupérer le nom d'un des deux pods web
+
+```bash
+kubectl delete pod/<nom>
+```
+
+=> Après suppression du pod, constater que la commande CURL renvoie toujours une réponse HTTP, et qu'un nouveau pod a été créé.
