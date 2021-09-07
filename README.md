@@ -61,3 +61,16 @@ kubectl delete pod/<nom>
 ```
 
 => Après suppression du pod, constater que la commande CURL renvoie toujours une réponse HTTP, et qu'un nouveau pod a été créé.
+
+
+### Configuration de Dolibarr
+
+Pour l'accès à la base de données, configurer Dolibarr comme suit :
+- Utiliser le driver mysqli
+- Utiliser le host `database`
+- Utiliser le port `3306`
+- Utiliser la base de données `dolibarr`
+- Utiliser l'utilisateur `root`
+- Utiliser le mot de passe `admin`
+
+URL Racine : External IP du service load balancer
