@@ -7,7 +7,7 @@ metadata:
   name: mariadb-data
 spec:
   accessModes:
-  - ReadWriteOnce
+  - ReadWriteMany
   storageClassName: azure-file-db-storage-class
   resources:
     requests:
