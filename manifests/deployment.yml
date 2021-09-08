@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "pmnprojectk8s-0548"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "pmnprojectk8s-0548"
+  template:
+    metadata:
+      labels:
+        app: "pmnprojectk8s-0548"
+    spec:
+      containers:
+        - name: "pmnprojectk8s-0548"
+          image: "pmnprojectcr.azurecr.io/pmnprojectk8s"
+          ports:
+          - containerPort: 80
