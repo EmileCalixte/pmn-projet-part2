@@ -8,6 +8,7 @@ metadata:
 spec:
   accessModes:
   - ReadWriteMany
+  storageClassName: my-azurefile
   resources:
     requests:
       storage: 1Gi
