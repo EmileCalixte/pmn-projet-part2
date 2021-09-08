@@ -42,6 +42,7 @@ jobs:
       with:
         namespace: pmn-project-k8sb473
         manifests: |
+          manifests/azure-file-sc.yaml
           manifests/dolibarr-data-persistentvolumeclaim.yaml
           manifests/dolibarr-documents-persistentvolumeclaim.yaml
           manifests/mariadb-data-persistentvolumeclaim.yaml
