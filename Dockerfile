@@ -12,8 +12,11 @@ COPY vhost-apache-dolibarr.conf /etc/apache2/sites-available/
 RUN chown -R www-data:www-data /var/www/html/ && \
     rm /etc/apache2/sites-available/000-default.conf && \
     rm /etc/apache2/sites-enabled/000-default.conf && \
-    a2ensite vhost-apache-dolibarr
+    a2ensite vhost-apache-dolibarr && \
 
 COPY entrypoint.sh /
+
+RUN chmod +x entrypoint.sh
+
 EXPOSE 80
 ENTRYPOINT ["/entrypoint.sh"]
