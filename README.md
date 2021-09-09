@@ -7,18 +7,17 @@
 
 ## Commande k8s
 
-- kompose convert : créer de la config depuis un docker compose
+- `kompose convert` : créer de la config depuis un docker compose
     - Valeur correcte apiVersion: apps/v1
     - Ajout selector:
       matchLabels:
       io.kompose.service: web
-    - 
-- kubectl apply -f <file>.yaml : execute un fichier deployment k8s
-    - apply <pvc>
-    - apply <deployments>
-    - apply <load-balancer>
-- kubectl get pods : liste pods actifs
-- kubectl delete pod <nom-du-pod> : Supprime un pod
+- `kubectl apply -f <file>.yaml` : execute un fichier deployment k8s
+    - `apply <pvc>`
+    - `apply <deployments>`
+    - `apply <load-balancer>`
+- `kubectl get pods` : liste pods actifs
+- `kubectl delete pod <nom-du-pod>` : Supprime un pod
 
 ## Procédure de tests
 
