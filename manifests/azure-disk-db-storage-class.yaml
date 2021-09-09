@@ -3,14 +3,6 @@ apiVersion: storage.k8s.io/v1
 metadata:
   name: azure-disk-db-storage-class
 provisioner: kubernetes.io/azure-disk
-mountOptions:
-  - dir_mode=0777
-  - file_mode=0777
-  - uid=0
-  - gid=0
-  - mfsymlinks
-  - cache=strict
-  - actimeo=30
 parameters:
   skuName: Standard_LRS
   location: francecentral
