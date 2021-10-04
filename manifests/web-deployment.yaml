@@ -19,7 +19,7 @@ spec:
         io.kompose.service: web
     spec:
       containers:
-      - image: "pmnprojectcr.azurecr.io/pmnprojectk8bis"
+      - image: "pmnk8scr.azurecr.io/pmnk8s"
         name: web
         ports:
         - containerPort: 80
