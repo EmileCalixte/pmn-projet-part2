@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "pmnk8s-d7d0"
+    labels:
+        app: "pmnk8s-d7d0"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: pmn-k8sa140-pmnk8s-d7d0.0fcf90323cc541e88235.francecentral.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "pmnk8s-d7d0"
+                servicePort: 80
